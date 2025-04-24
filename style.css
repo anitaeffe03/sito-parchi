@@ -1,0 +1,468 @@
+
+    body {
+      font-family:Helvetica, sans-serif;
+      margin: 0px;
+      padding: 0;
+      line-height: 1.3;
+      background: #fff;
+      color: #000;
+      margin-right: 0px ;
+      margin-left: 10px;
+        }
+
+
+    header nav ul {
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+      gap: 1rem;
+      padding: 2rem;
+      margin-top: 0%;
+      text-decoration: none;
+    }
+
+    header nav ul li a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+
+    .nome-sito {
+      font-weight: bold;        
+      letter-spacing: 1px;       
+      text-transform: uppercase; 
+      display: inline-block;
+      transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+    
+    .nome-sito:hover {
+      transform: translateY(-5px) scale(1.05);
+    }
+
+    .link-attività{
+      display: inline-block;
+      transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+  .link-attività:hover {
+      transform: translateY(-5px) scale(1.0);
+    }
+
+
+    
+    hero {
+      display: block;
+      padding: 2rem;
+    }
+
+    hero h1 {
+      font-size: 4rem;
+      font-weight: bold;
+      text-align: left;
+      line-height: 1.1;
+      margin-bottom: 30px;
+    }
+
+    hero .h1 .p {
+        text-align:left;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    h2 h3 h4 {
+      font-size: 2rem;
+    }
+
+    p{
+      font-size:1rem;
+    } 
+
+    main {
+      padding: 2rem;
+      margin: auto;
+    }
+
+    p,h2,h3, h4{
+        margin-left: 70px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .home{
+     margin-left: 20%;
+    }
+
+    .parchi-home-1 > p:first-child,
+    .attività-home-1 > p:first-child {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-weight: bold;
+      font-size: 2rem;
+      margin-left: 0%;
+      margin-right: 0%;
+    }
+    .parchi-home-1 > p:first-child::after,
+    .attività-home-1 > p:first-child::after {
+      content: "";
+      flex-grow: 1;
+      height: 1px;
+      background-color: black;
+      display: block;
+    }
+
+.link-attività{
+  display: flex;
+  justify-content: flex-end;
+}
+   section {
+      margin-top: 70px;
+      margin-bottom: 70px;
+    }
+
+    hr {
+        border: none;
+        height: 1px;
+      background-color: black;
+      flex-grow: 1;
+      margin-top: 50px;
+      margin-bottom:50px;
+      }
+
+    .testi-colonne{
+        display: grid;
+        grid-template-columns: 3fr 3fr;
+        gap: 0px;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+    }
+     
+    .sport{
+        display: grid;
+        grid-template-columns: 3fr 3fr;
+        gap: 0px;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .paragrafo {
+        display: grid;
+        grid-template-columns: 3fr 3fr;
+        gap: 0px;
+        margin: auto;
+        align-items: center;
+    }
+   
+    .card-attività {
+      display: grid;
+      grid-template-columns: repeat(2, 2fr);
+      gap:20px;
+      padding: 20px;
+    }
+
+  .card-parchi{
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    gap:20px;
+    padding: 10px;
+    }
+    
+
+    .items p, .uno, .tre, .quattro{
+      text-align: left;
+      margin-left: 0;
+    }
+
+    .card-sila{
+      display: grid;
+      grid-template-columns: repeat(3, 2fr);
+      gap:16px;
+    }
+
+    .card-sila p {
+      text-align: left;
+      margin-left: 0;
+    }
+
+    .img-attività {
+            width: 600px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 30px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+          }
+
+          .img-attività:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+          }
+
+    .img-uccelli{
+        width: 700px;
+        height: 500px;
+        object-fit: cover;
+        border-radius: 30px;
+    }
+
+    .img-grandi{
+        width: 1360px;
+        height: 653px;
+        object-fit: cover;
+        border-radius: 30px;
+        margin-bottom: 70px;
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+
+    .img-grandidue{
+      width: 1360px;
+        height: 571px;
+        object-fit: cover;
+        border-radius: 30px;
+        margin-bottom: 70px;
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+
+    .img-card{
+        width: 314px;
+        height: 290px;
+        object-fit: cover;
+        border-radius: 30px;
+    }
+
+    .img-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .img-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+   .img-dettaglio {
+    width: 433px;
+    height: 375px;
+    border-radius: 30px;
+    object-fit: cover;
+   }
+
+    .card{
+        display:grid;
+        grid-template-columns: repeat(4, 2fr);;
+        gap: 42px;
+        align-items: start;
+        margin-left: 20px;
+        max-width: 1200px; 
+        margin-top: 20px;
+    }
+
+   
+
+
+    .card p {
+        text-align: left;
+        margin-left: 0%;
+    }
+
+    .card-dettaglio{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        gap: 30px;
+        padding: 40px;
+    }
+
+    .dettaglio{
+        background-color: #f3f1ef;
+        padding: 20px 25px;
+        border-radius: 30px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        line-height: 1.6;
+        font-size: 16px;
+        height: 220px; 
+        display: flex;  
+        text-align: left;
+    }
+
+   a{
+    text-decoration: none;
+        color: #000;
+   } 
+    .uccelli{
+        display: flex;
+        justify-content: space-between;
+        gap:20px;
+    }
+
+    
+
+    footer {
+      list-style: none;
+      background-color: #F3F2EF;
+      padding: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    footer ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      padding: 0;
+      margin: 0;
+    }
+
+    footer li {
+      font-size: 0.9rem;
+    }
+
+
+    @media screen and (max-width: 768px) {
+    header nav ul li a .nome-sito{
+          font-size: 0.7rem; 
+      }
+  
+      .nome-sito {
+          font-size: 1rem;
+      }
+  
+      hero h1  {
+        font-size: 2rem;
+      }
+
+      .section .attività-home-1{
+        font-size: 1rem;
+      }
+      
+   
+      hero h2 {
+        font-size: 1rem;
+      }
+
+      body p {
+        font-size: 0.7rem;
+      }
+  
+      .body h2  {
+        font-size: 1 rem;
+      }
+    
+      .testi-colonne, .parchi-home-1, .attività-home-1 {
+        display: grid;
+        grid-template-columns: 1fr;
+
+      }
+  
+      .card-attività, .card-parchi, .card-sila {
+          grid-template-columns: 1fr;
+          padding: 10px;
+      }
+  
+      .img-attività {
+          width: 100%; 
+          height: auto;
+      }
+      
+      footer {
+        list-style: none;
+        background-color: #F3F2EF;
+        padding: 2.5rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap:10px
+      }
+      
+      .img-card {
+        width: 195px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 17px;
+      }
+
+      .card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap:20px;
+        padding: 20px;
+        margin-left: -15px;
+        margin-right: 0%;
+        margin-top: 0%;
+        margin-bottom: 0%;
+      }
+
+      .card-parchi{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap:20px;
+        padding: 20px;
+        margin-left: -30px;
+      }
+
+      .img-uccelli{
+        width: 433px;
+        height: 375px;
+      }
+
+      .uccelli{
+        display: block;
+      }
+
+      .img-grandidue{
+        width: 433px;
+        height: 375px;
+        margin-left: 0;
+      }
+
+      .img-grandi{
+        width: 433px;
+    height: 375px;
+    border-radius: 30px;
+    object-fit: cover;
+    margin-left: 0px;
+    margin-bottom: 0px;
+      }
+
+      .img-dettaglio{
+        margin-right: 30px;
+      }
+
+  .link-attività{
+    transform: scale(0.5);
+    display: block;
+    margin-top: 40px;
+    margin-left: 0px;
+    margin-right: 60px;
+  
+  }
+
+  .link-attività:hover {
+    transform: translateY(-0px) scale(0.6);
+  }
+
+  .paragrafo{
+    display: block;
+    margin-left: 0px;
+  }
+
+  .sport{
+    display: block;
+  }
+
+  .card-dettaglio {
+    grid-template-columns: 1fr; 
+    gap: 20px; 
+    padding: 20px; 
+}
+
+.dettaglio {
+    font-size: 14px; 
+    height: auto; 
+    padding: 15px 20px; 
+}
+}
+  
