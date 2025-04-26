@@ -185,8 +185,6 @@
       margin-left: 0;
     }
 
-
-
     .img-attività {
             width: 600px;
             height: 300px;
@@ -505,4 +503,18 @@ p,h2,h3, h4{
   margin-left: 0%;
   margin-right: 0%;
 }
+
+.parchi-home-1 > p:first-child,
+.attività-home-1 > p:first-child {
+  flex-direction: column;
+  align-items: flex-start; 
+}
+
+.parchi-home-1 > p:first-child::after,
+.attività-home-1 > p:first-child::after {
+  width: 100%;
+  height: 1px;
+  margin-top: 0.5rem; 
+}
+
 }
