@@ -399,10 +399,11 @@
         grid-template-columns: repeat(1, 1fr);
         gap:20px;
         padding: 20px;
-        margin-left: -15px;
+        margin-left: 0px;
         margin-right: 0%;
         margin-top: 0%;
         margin-bottom: 0%;
+
       }
 
       .card-parchi{
@@ -410,7 +411,8 @@
         grid-template-columns: repeat(1, 1fr);
         gap:20px;
         padding: 20px;
-        margin-left: 30px;
+        margin-left: 15px;
+        margin-right: 0%;
       }
 
      .uccelli{
@@ -461,14 +463,18 @@ p,h2,h3, h4{
     .attività-home-1 > p:first-child {
       flex-direction: column;
       align-items: flex-start; 
-      font-size: 1.5rem;
+      font-size: 1.2rem;
     }
   
     .parchi-home-1 > p:first-child::after,
     .attività-home-1 > p:first-child::after {
       width: 100%; 
-      height: 2px; 
+      height: 1px; 
       margin-top: 0.5rem; 
+    }
+    
+    .home{
+      margin-left: 5%;
     }
   }
 
