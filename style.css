@@ -318,7 +318,7 @@
     }
 
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 600px){
     header nav ul li a .nome-sito{
           font-size: 0.7rem; 
       }
@@ -326,15 +326,30 @@
       .nome-sito {
           font-size: 0.8rem;
       }
-  
-      .img-attività, .img-dettaglio, .img-grandi, .img-grandidue, .img-uccelli{
+
+  .img-attività, .img-dettaglio{
+    width: 300px;
+    height: 200px;
+    border-radius: 15px;
+  }
+
+  .img-grandidue, .img-uccelli, .img-grandi{
       max-width: 100%;
       height: auto;
       display: block;
-      width: 600px;
-      height: 300px;
+      width: 500px;
+      height: 200px;
       margin-left: 0%;
+      border-radius: 15px;
+      align-items: center;
       }
+
+    .img-card{
+      width: 251px;
+      height: 232px;
+      border-radius: 20px;
+      margin-right: 0%;
+    }
 
       h2 h3 {
         font-size: 1rem;
@@ -374,9 +389,9 @@
 
       }
   
-      .card-attività, .card-parchi, .card-sila {
-          grid-template-columns: repeat(1, 1fr);
-          padding: 10px;
+      .card, .card-attività, .card-parchi, .card-sila {
+         display: block;
+          padding: 0px;
       }
   
        
@@ -411,7 +426,7 @@
         grid-template-columns: repeat(1, 1fr);
         gap:20px;
         padding: 20px;
-        margin-left: 15px;
+        margin-left: 5px;
         margin-right: 0%;
       }
 
@@ -457,26 +472,13 @@ body{
 
 p,h2,h3, h4{
   margin-left: 20px;}
- 
-  @media (max-width: 768px) {
-    .parchi-home-1 > p:first-child,
-    .attività-home-1 > p:first-child {
-      flex-direction: column;
-      align-items: flex-start; 
-      font-size: 1.2rem;
-    }
-  
-    .parchi-home-1 > p:first-child::after,
-    .attività-home-1 > p:first-child::after {
-      width: 100%; 
-      height: 1px; 
-      margin-top: 0.5rem; 
-    }
-    
-    .home{
-      margin-left: 5%;
-    }
-  }
 
 }
-  
+
+@media screen and (max-width: 300px){
+  .img-card{
+  width: 157px;
+  height: 145px;
+  border-radius: 20px;
+}
+}
