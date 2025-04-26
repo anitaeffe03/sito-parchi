@@ -231,7 +231,8 @@
         width: 314px;
         height: 290px;
         object-fit: cover;
-        border-radius: 30px;
+        border-radius: 30px; 
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     
