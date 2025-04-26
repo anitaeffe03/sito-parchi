@@ -180,13 +180,12 @@
     .card-sila{
       display: grid;
       grid-template-columns: repeat(3, 2fr);
-      gap:16px;
-    }
-
-    .card-sila p {
+      gap:16px; 
       text-align: left;
       margin-left: 0;
     }
+
+
 
     .img-attività {
             width: 600px;
@@ -449,5 +448,29 @@
     height: auto; 
     padding: 15px 20px; 
 }
+
+body{
+  margin-left: 0px;
+}
+
+p,h2,h3, h4{
+  margin-left: 20px;}
+ 
+  @media (max-width: 768px) {
+    .parchi-home-1 > p:first-child,
+    .attività-home-1 > p:first-child {
+      flex-direction: column;
+      align-items: flex-start; 
+      font-size: 1.5rem;
+    }
+  
+    .parchi-home-1 > p:first-child::after,
+    .attività-home-1 > p:first-child::after {
+      width: 100%; 
+      height: 2px; 
+      margin-top: 0.5rem; 
+    }
+  }
+
 }
   
