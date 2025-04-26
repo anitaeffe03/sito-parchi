@@ -25,6 +25,7 @@
       text-decoration: none;
       color: black;
       font-weight: bold;
+      font-size: 0.7rem;
     }
 
     .nome-sito {
@@ -324,7 +325,7 @@
       }
   
       .nome-sito {
-          font-size: 1rem;
+          font-size: 0.8rem;
       }
   
       .img-attività, .img-dettaglio, .img-grandi, .img-grandidue, .img-uccelli{
@@ -352,7 +353,6 @@
         font-size: 1rem;
       }
       
-   
       hero h2 {
         font-size: 0.9rem;
       }
@@ -369,8 +369,6 @@
         font-size: 0.8rem;
       }
 
-
-    
       .testi-colonne, .parchi-home-1, .attività-home-1 {
         display: grid;
         grid-template-columns: 1fr;
@@ -382,8 +380,7 @@
           padding: 10px;
       }
   
-     
-      
+       
       footer {
         list-style: none;
         background-color: #F3F2EF;
