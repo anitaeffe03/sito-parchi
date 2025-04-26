@@ -234,9 +234,6 @@
         border-radius: 30px;
     }
 
-    .img-card {
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
     
     .img-card:hover {
       transform: translateY(-10px);
@@ -261,8 +258,6 @@
     }
 
    
-
-
     .card p {
         text-align: left;
         margin-left: 0%;
@@ -331,6 +326,23 @@
           font-size: 1rem;
       }
   
+      .img-attività, .img-dettaglio, .img-grandi, .img-grandidue, .img-uccelli{
+      max-width: 100%;
+      height: auto;
+      display: block;
+      width: 600px;
+      height: 300px;
+      margin-left: 0%;
+      }
+
+      h2 h3 {
+        font-size: 1rem;
+      }
+
+      section h2 {
+        font-size: 1rem;
+      }
+     
       hero h1  {
         font-size: 2rem;
       }
@@ -341,7 +353,7 @@
       
    
       hero h2 {
-        font-size: 1rem;
+        font-size: 0.9rem;
       }
 
       body p {
@@ -351,6 +363,12 @@
       .body h2  {
         font-size: 1 rem;
       }
+
+      .info h4 {
+        font-size: 0.8rem;
+      }
+
+
     
       .testi-colonne, .parchi-home-1, .attività-home-1 {
         display: grid;
@@ -359,14 +377,11 @@
       }
   
       .card-attività, .card-parchi, .card-sila {
-          grid-template-columns: 1fr;
+          grid-template-columns: repeat(1, 1fr);
           padding: 10px;
       }
   
-      .img-attività {
-          width: 100%; 
-          height: auto;
-      }
+     
       
       footer {
         list-style: none;
@@ -374,19 +389,17 @@
         padding: 2.5rem;
         display: grid;
         grid-template-columns: 1fr;
-        gap:10px
+        gap:10px;
+        margin-left: 0px;
       }
       
-      .img-card {
-        width: 195px;
-        height: 200px;
-        object-fit: cover;
-        border-radius: 17px;
+      footer li {
+        font-size: 0.7rem;
       }
-
+    
       .card{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap:20px;
         padding: 20px;
         margin-left: -15px;
@@ -397,47 +410,21 @@
 
       .card-parchi{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap:20px;
         padding: 20px;
-        margin-left: -30px;
+        margin-left: 30px;
       }
 
-      .img-uccelli{
-        width: 433px;
-        height: 375px;
-      }
-
-      .uccelli{
+     .uccelli{
         display: block;
       }
 
-      .img-grandidue{
-        width: 433px;
-        height: 375px;
-        margin-left: 0;
-      }
-
-      .img-grandi{
-        width: 433px;
-    height: 375px;
-    border-radius: 30px;
-    object-fit: cover;
-    margin-left: 0px;
-    margin-bottom: 0px;
-      }
-
-      .img-dettaglio{
-        margin-right: 30px;
-      }
-
   .link-attività{
-    transform: scale(0.5);
-    display: block;
+    transform: scale(0.5);  
     margin-top: 40px;
-    margin-left: 0px;
-    margin-right: 60px;
-  
+    margin-left: 70px;
+    
   }
 
   .link-attività:hover {
