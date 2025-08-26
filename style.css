@@ -413,7 +413,6 @@ body {
         font-size: 0.7rem;
       }
     
-
       .card-parchi, .card-sila, .card{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
