@@ -1,23 +1,14 @@
-
-    body {
+body {
       font-family:Helvetica, sans-serif;
-      margin: 0px;
-      padding: 0;
       line-height: 1.3;
       background: #fff;
       color: #000;
-      margin-right: 0px ;
-      margin-left: 10px;
         }
-
-
+    
     header nav ul {
       display: flex;
       justify-content: space-between;
       list-style: none;
-      gap: 1rem;
-      padding: 2rem;
-      margin-top: 0%;
       text-decoration: none;
     }
 
@@ -26,10 +17,17 @@
       color: black;
       font-weight: bold;
       font-size: 0.7rem;
+      display: inline-block; 
+      transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1); 
     }
 
+    header nav ul li a:hover {
+      transform: translateY(-5px) scale(1.05); 
+    }
+    
+
     .nome-sito {
-      font-weight: bold;        
+      font-weight: bold;       
       letter-spacing: 1px;       
       text-transform: uppercase; 
       display: inline-block;
@@ -49,11 +47,9 @@
       transform: translateY(-5px) scale(1.0);
     }
 
-
-    
     hero {
       display: block;
-      padding: 2rem;
+      padding: 1rem;
     }
 
     hero h1 {
@@ -61,13 +57,10 @@
       font-weight: bold;
       text-align: left;
       line-height: 1.1;
-      margin-bottom: 30px;
     }
 
     hero .h1 .p {
         text-align:left;
-        margin-bottom: 20px;
-        margin-top: 20px;
     }
 
     h2 h3 h4 {
@@ -79,30 +72,25 @@
     } 
 
     main {
-      padding: 2rem;
-      margin: auto;
+      padding: 0.5rem;
     }
 
-    p,h2,h3, h4{
-        margin-left: 70px;
-        margin-bottom: 20px;
-        margin-top: 20px;
+    .contenuto-testo {
+      max-width: 700px; 
     }
 
-    .home{
-     margin-left: 20%;
-    }
+   .contenuto-testo-a {
+     max-width: 500px;
+   }
 
     .parchi-home-1 > p:first-child,
     .attività-home-1 > p:first-child {
       display: flex;
       align-items: center;
-      gap: 1rem;
       font-weight: bold;
-      font-size: 2rem;
-      margin-left: 0%;
-      margin-right: 0%;
+      font-size: 2rem; 
     }
+
     .parchi-home-1 > p:first-child::after,
     .attività-home-1 > p:first-child::after {
       content: "";
@@ -116,18 +104,13 @@
   display: flex;
   justify-content: flex-end;
 }
-   section {
-      margin-top: 70px;
-      margin-bottom: 70px;
-    }
 
     hr {
         border: none;
         height: 1px;
-      background-color: black;
-      flex-grow: 1;
-      margin-top: 50px;
-      margin-bottom:50px;
+        background-color: black;
+        flex-grow: 1;
+        margin-bottom: 1rem;
       }
 
     .testi-colonne{
@@ -148,7 +131,6 @@
         justify-content: center;
     }
 
-
     .paragrafo {
         display: grid;
         grid-template-columns: 3fr 3fr;
@@ -167,27 +149,41 @@
   .card-parchi{
     display: grid;
     grid-template-columns: repeat(4, 2fr);
-    gap:20px;
+    align-items: center;
+    gap:10px;
     padding: 10px;
     }
     
-
-    .items p, .uno, .tre, .quattro{
-      text-align: left;
-      margin-left: 0;
+    .items p{
+      text-align:left;
+      max-width: 300px;
     }
 
-    .card-sila{
+    .card-sila,.card{
       display: grid;
       grid-template-columns: repeat(3, 2fr);
       gap:16px; 
       text-align: left;
-      margin-left: 0;
     }
 
+    .img-card{
+       max-width: 100%;width: 314px;
+       min-height: 290px;
+         max-height: 290px;
+        object-fit: cover;
+        border-radius: 30px; 
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+       .img-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+
     .img-attività {
-            width: 600px;
-            height: 300px;
+            width: 100%;
+            max-height: 300px;
             object-fit: cover;
             border-radius: 30px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -197,70 +193,31 @@
             transform: translateY(-10px);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
           }
-
-    .img-uccelli{
-        width: 700px;
-        height: 500px;
-        object-fit: cover;
-        border-radius: 30px;
-    }
-
+ 
     .img-grandi{
-        width: 1360px;
-        height: 653px;
-        object-fit: cover;
-        border-radius: 30px;
-        margin-bottom: 70px;
-        margin-top: 20px;
-        margin-left: 40px;
+      width: 100%;      
+      max-height: 400px;  
+      object-fit: cover;  
+      border-radius: 30px;
+      display: block;
     }
 
     .img-grandidue{
-      width: 1360px;
-        height: 571px;
-        object-fit: cover;
-        border-radius: 30px;
-        margin-bottom: 70px;
-        margin-top: 20px;
-        margin-left: 40px;
+      width: 100%;      
+      max-height: 400px;  
+      object-fit: cover;  
+      border-radius: 30px;
+      display: block;
     }
 
-    .img-card{
-        width: 314px;
-        height: 290px;
-        object-fit: cover;
-        border-radius: 30px; 
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    
-    .img-card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    }
-
-   .img-dettaglio {
+.img-dettaglio {
+    max-width: 100%;
     width: 433px;
     height: 375px;
     border-radius: 30px;
     object-fit: cover;
    }
 
-    .card{
-        display:grid;
-        grid-template-columns: repeat(4, 2fr);;
-        gap: 42px;
-        align-items: start;
-        margin-left: 20px;
-        max-width: 1200px; 
-        margin-top: 20px;
-    }
-
-   
-    .card p {
-        text-align: left;
-        margin-left: 0%;
-    }
 
     .card-dettaglio{
         display: grid;
@@ -276,7 +233,7 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
         line-height: 1.6;
         font-size: 16px;
-        height: 220px; 
+        height: 150px; 
         display: flex;  
         text-align: left;
     }
@@ -285,13 +242,23 @@
     text-decoration: none;
         color: #000;
    } 
-    .uccelli{
+   
+   .img-uccelli{
+     width: 50%;
+      max-height: 500px;
+      object-fit: cover;
+      border-radius: 30px;
+  }
+
+  .uccelli div {
+    width: 45%; 
+  }
+   .uccelli{
         display: flex;
         justify-content: space-between;
-        gap:20px;
+        gap: 5px;
+        align-items: center;
     }
-
-    
 
     footer {
       list-style: none;
@@ -308,33 +275,81 @@
       display: flex;
       gap: 1rem;
       padding: 0;
-      margin: 0;
+    
     }
 
     footer li {
       font-size: 0.9rem;
     }
 
+      .parchi-home-1 > p:first-child,
+  .attività-home-1 > p:first-child {
+    flex-direction: column;
+    align-items: flex-start; 
+  }
+
+  .parchi-home-1 > p:first-child::after,
+  .attività-home-1 > p:first-child::after {
+    width: 100%;
+    height: 1px;
+    margin-top: 0.5rem; 
+  }
+    
+    @media screen and (max-width: 1200px) {
+      .img-card{
+        max-width: 100%;
+         display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+      }
+         .card-sila{
+          display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    
+    
+  @media screen and (max-width: 1100px) {
+        .card-sila .card-parchi {
+          display: grid;
+         grid-template-columns: repeat(2, 1fr);
+        } 
+    }
+
+    @media screen and (max-width: 1100px) {
+      .card-attività, .card-dettaglio, .card-sila {
+        display: grid;
+        grid-template-columns: 2fr;
+        gap: 20px;
+      }
+    }
+
+     @media screen and (max-width: 900px) {
+         .card-parchi, .card-sila, .card  {
+          display: grid;
+         grid-template-columns: repeat(2, 1fr);
+        } 
+    }
 
     @media screen and (max-width: 600px){
     header nav ul li a .nome-sito{
-          font-size: 0.7rem; 
+          font-size: 0.5rem; 
       }
   
       .body{
         margin-left: 0px;
       }
       .nome-sito {
-          font-size: 0.8rem;
+          font-size: 0.5rem;
       }
 
-  .img-attività, .img-dettaglio{
-    width: 300px;
-    height: 200px;
-    border-radius: 15px;
+  .img-attività, .img-dettaglio {
+    max-width: 100%;
+    height:200px;
+    border-radius:15px;
   }
 
-  .img-grandidue, .img-uccelli, .img-grandi{
+  .img-grandidue, .img-grandi{
       max-width: 100%;
       height: auto;
       display: block;
@@ -344,13 +359,6 @@
       border-radius: 15px;
       align-items: center;
       }
-
-    .img-card{
-      width: 251px;
-      height: 232px;
-      border-radius: 20px;
-      margin-right: 0%;
-    }
 
       h2 h3 {
         font-size: 1rem;
@@ -373,15 +381,15 @@
       }
 
       body p {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
       }
   
       .body h2  {
-        font-size: 1 rem;
+        font-size: 1rem;
       }
 
       .info h4 {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
       }
 
       .testi-colonne, .parchi-home-1, .attività-home-1 {
@@ -390,13 +398,7 @@
 
       }
   
-      .card, .card-attività, .card-parchi, .card-sila {
-         display: block;
-          padding: 0px;
-          margin-left: 0%;
-      }
-  
-       
+    
       footer {
         list-style: none;
         background-color: #F3F2EF;
@@ -404,43 +406,31 @@
         display: grid;
         grid-template-columns: 1fr;
         gap:10px;
-        margin-left: 0px;
+      
       }
       
       footer li {
         font-size: 0.7rem;
       }
     
-      .card{
+
+      .card-parchi, .card-sila, .card{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        gap:5px;
-        padding: 0px;
-        margin-left: 0px;
-        margin-right: 0%;
-        margin-top: 0%;
-        margin-bottom: 0%;
-
-      }
-
-      .card-parchi{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap:5px;
-        padding: 0px;
-        margin-left: 0px;
-        margin-right: 0%;
       }
 
      .uccelli{
-        display: block;
+        flex-direction: column; 
+        align-items: center; 
+     }
+
+      .img-uccelli, .uccelli div {
+        width: 100%;
+        text-align: left; 
       }
 
   .link-attività{
     transform: scale(0.5);  
-    margin-top: 40px;
-    margin-left: 70px;
-    
   }
 
   .link-attività:hover {
@@ -477,31 +467,12 @@ p,h2,h3, h4{
 
 }
 
-.home{
-  margin-left: 5px;
-  margin-bottom: 30px;
-}
-
-  .parchi-home-1 > p:first-child,
-  .attività-home-1 > p:first-child {
-    flex-direction: column;
-    align-items: flex-start; 
-  }
-
-  .parchi-home-1 > p:first-child::after,
-  .attività-home-1 > p:first-child::after {
-    width: 100%;
-    height: 1px;
-    margin-top: 0.5rem; 
-  }
 
 @media screen and (max-width: 300px){
   .img-card{
-  width: 157px;
-  height: 145px;
+  width: 150px;
+  height: 135px;
   border-radius: 20px;
-  margin-left: 0%;
-  margin-right: 0%;
 }
 
 .parchi-home-1 > p:first-child,
@@ -514,7 +485,13 @@ p,h2,h3, h4{
 .attività-home-1 > p:first-child::after {
   width: 100%;
   height: 1px;
-  margin-top: 0.5rem; 
+}
+.attività-home-1 > p:first-child {
+  margin-top: 10px;
 }
 
+.attività-home-1 > p:first-child::after {
+  width: 100%;
+  height: 1px;
+}
 }
